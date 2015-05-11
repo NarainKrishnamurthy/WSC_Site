@@ -263,7 +263,7 @@ li a.active{
 
 /*service area*/
 .service{
-	background: url(../img/pattern.jpg);
+	background-color: #990000;
 	background-repeat: repeat-y;
 	margin-top: 40px;
 }
