@@ -5,10 +5,12 @@
   "private": true,
   "dependencies": {
     "connect": "^3.3.5",
-    "serve-static": "^1.9.2"
+    "serve-static": "^1.9.2",
+    "shrinkwrap": "^0.4.0"
   },
-  "engines":{
-    "node":"0.10.x"
+  "engines": {
+    "node": "0.6.x",
+    "npm": "1.0.x"
   },
   "scripts": {
     "start": "node server.js"

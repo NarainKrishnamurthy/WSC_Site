@@ -1,22 +1,17 @@
 {
-  "name": "WSC_Website",
-  "description": "Site for CMU Wall Street Club",
+  "name": "WSC_Site",
   "version": "1.0.0",
-  "private": true,
+  "description": "Website for CMU Wall Street Club",
+  "main": "server.js",
   "dependencies": {
     "connect": "^3.3.5",
-    "serve-static": "^1.9.2",
-    "shrinkwrap": "^0.4.0"
+    "serve-static": "^1.9.2"
   },
-  "engines": {
-    "node": "0.6.x",
-    "npm": "1.0.x"
-  },
+  "devDependencies": {},
   "scripts": {
+    "test": "node server.js",
     "start": "node server.js"
   },
-  "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/NarainKrishnamurthy/WSC_Site.git"
@@ -24,13 +19,10 @@
   "keywords": [
     "wall",
     "street",
-    "club",
-    "cmu",
-    "tepper",
-    "website"
+    "club"
   ],
   "author": "Narain Krishnamurthy",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/NarainKrishnamurthy/WSC_Site/issues"
   },
