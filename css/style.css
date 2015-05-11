@@ -15,7 +15,10 @@ h1, h2{
 	font-weight: bold;
 }
 
-
+.slider a {
+	color: #fff;
+	text-transform: uppercase;
+}
 /*header area*/
 .top-header{
 	background: #fff !important;
@@ -106,7 +109,7 @@ li a.active{
 	margin-top: 0;
 }
 .carousel-caption button{
-	width: 240px;
+	width: 280px;
 	height: 60px;
 	background: #3a9ecb;
 	color: #fff;
@@ -139,8 +142,8 @@ li a.active{
 	text-align: left;
 	left: 12%;
     line-height: 1;
-    top: 50%;
-    margin-top: -100px;
+    top: 60%;
+    margin-top: 0px;
 }
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
   font-size: 18px;
@@ -477,6 +480,13 @@ li a.active{
 	border-bottom: 1px solid #13849c;
 	padding-bottom: 12px;
 	margin-bottom: 0;
+}
+
+.contact-form h4{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 0;
+	display: block;
 }
 .contact-info ul{
 	margin: 0;

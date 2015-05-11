@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wall Street Club - Tepper School of Business</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script>
+		var WSC_Site= angular.module('WSC_Site',[]);
+
+		function main_controller ($scope, $http, $location){
+			$scope.page = "placements2";
+
+			$scope.setPage = function(page_name){
+				$scope.page = page_name;
+			};
+		};
+
+		WSC_Site.controller('main_controller',main_controller);
+	</script>
+</head>
+<body ng-app="WSC_Site" ng-controller="main_controller">
+	<div ng-include src="'menubar.html'"></div>	
+	<section>
+		<br />
+	</section>
+			<section class="service" id="placements2">
+				<div class="container">
+					<div class="row col-sm-10 col-sm-offset-1 ">
+							<h2 class="text-center">Alumni</h2>
+							<h4 style="line-height: 150%;">
+							<hr/> 
+	
+							<ul>
+								<li> Class of 2015 </li>
+								<ul>
+								<li> Dixon Liang</li>
+								<ul>
+								<li> Full Time: Citi | Sales &amp; Trading</li>
+								<li> Junior Summer: Citi | Sales &amp; Trading</li>
+								</ul>
+
+								<li> Karthik Annaamalai</li>
+								<ul>
+								<li> Full Time: Evercore | Investment Banking</li>
+								<li> Junior Summer: Evercore | Investment Banking</li>
+								</ul>
+
+								<li> John Cusick</li>
+								<ul>
+								<li> Full Time: Citi | Sales &amp; Trading</li>
+								<li> Junior Summer: Citi | Sales &amp;Trading</li>
+								</ul>
+
+								<li> Laavy Kumar</li>
+								<ul>
+								<li> Full Time: Bank of America Merrill Lynch | Investment Banking</li>
+								<li> Junior Summer: Bank of America Merrill Lynch | Investment Banking </li>
+								</ul>
+
+								<li> Anish Singh</li>
+								<ul>
+								<li> Full Time: JP Morgan | Investment Banking</li>
+								<li> Junior Summer: Jefferies | Investment Banking</li>
+								</ul>
+
+								<li> Lawrence Hu</li>
+								<ul>
+								<li> Full Time: Deutsche Bank | Sales &amp; Trading</li>
+								<li> Junior Summer: Deutsche Bank | Sales &amp; Trading</li>
+								</ul>
+
+							</ul>
+						<br />
+						<li> Class of 2014 </li>
+						<ul>
+							<li> Jay Shi</li></li>
+							<ul>
+							<li> Full Time: Jefferies | Investment Banking</li>
+							<li> Junior Summer: Jefferies | Investment Banking</li>
+							</ul>
+
+							<li> Ronny Ho</li>
+							<ul>
+							<li> Full Time: Citi | Capital Markets</li>
+							<li> Junior Summer: Citi Capital Markets</li>
+							</ul>
+
+							<li> Jisoo Park</li>
+							<ul>
+							<li> Full Time: JP Morgan | Investment Banking</li>
+							<li> Junior Summer: RBC | Investment Banking</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</section><!-- end of service section -->
+	
+
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>

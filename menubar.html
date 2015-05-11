@@ -1,0 +1,48 @@
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 header-logo">
+					<br>
+					<a href="index.html"><img src="img/nav_logo.jpg" alt="" class="img-responsive logo" style="height: 80px"></a>
+				</div>
+
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li><a class="menu" href="index.html" ng-class="{active: page == 'home'}">Home</a></li>
+					        <li><a class="menu" href="about.html" ng-class="{active: page == 'about'}">about</a></li>
+					         <li class="dropdown">
+						          <a class="dropdown-toggle" data-toggle="dropdown" role="button"
+						             ng-class="{active: page == 'placements1' || page == 'placements2'}">Placements</a>
+						          <ul class="dropdown-menu" role="menu">
+						            <li><a href="placements1.html">Current Members</a></li>
+						            <li class="divider"></li>
+						            <li><a href="placements2.html">Alumni</a></li>
+						          </ul>
+						        </li>
+
+					        <li><a class="menu" href="application.html" ng-class="{active: page == 'application'}">application</a></li>
+					        <li><a class="menu" href="sa.html" ng-class="{active: page == 'sa'}">seeking alpha</a></li>
+					        <li><a class="menu" href="contact.html" ng-class="{active: page == 'contact'}"> contact us</a></li>
+					      </ul>
+					    </div><!-- /navbar-collapse -->
+					  </div><!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end of header area -->
+	

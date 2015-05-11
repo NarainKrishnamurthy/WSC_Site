@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wall Street Club - Tepper School of Business</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script>
+		var WSC_Site= angular.module('WSC_Site',[]);
+
+		function main_controller ($scope, $http, $location){
+			$scope.page = "placements1";
+
+			$scope.setPage = function(page_name){
+				$scope.page = page_name;
+			};
+		};
+
+		WSC_Site.controller('main_controller',main_controller);
+	</script>
+</head>
+<body ng-app="WSC_Site" ng-controller="main_controller">
+	
+	<div ng-include src="'menubar.html'"></div>		
+	<section>
+		<br />
+	</section>
+			<!-- service section starts here -->
+
+			<section class="service" id="placements1">
+				<div class="container">
+					<div class="row col-sm-10 col-sm-offset-1 ">
+						<h2 class="text-center">Current Members</h2>
+						<h4 style="line-height: 150%;">
+						<hr/> 
+	
+						<ul>
+							<li> Class of 2016
+							<ul> 
+								<li> Carleton Gibson - Club President
+								<ul>
+									<li> Junior Summer: Bank of America Merrill Lynch | Investment Banking
+								</ul> 
+								<li> Ajit Bopalkar – Club Head of IB
+								<ul>
+									<li> Junior Summer: Citi | Investment Banking
+								</ul> 
+								<li> Vani Kumar – Club Co-Head of S&amp;T
+								<ul>
+									<li> Junior Summer: Barclays | Sales &amp; Trading
+								</ul> 
+								<li> Jordan Friedlander – Club Co-Head of S&amp;T 
+								<ul>
+									<li> Junior Summer: Morgan Stanley | Equity Research
+								</ul> 
+								<li> Amanda McHenry
+								<ul>
+									<li> Junior Summer: HSBC | Sales &amp; Trading
+								</ul>
+								<li> Daniel Manners
+								<ul>
+									<li> Junior Summer: Citi | Sales &amp; Trading
+								</ul>
+								<li> Danning Wang
+								<ul>
+									<li> Junior Summer: JP Morgan | Investment Banking
+								</ul>    
+								<li> Dina Berdichevsky
+								<ul>
+									<li> Junior Summer: Jefferies | Investment Banking
+								</ul>
+								<li> Dina Berdichevsky
+								<ul>
+									<li> Junior Summer: Jefferies | Investment Banking
+								</ul>
+								<li> Greg Allen
+								<ul>
+									<li> Junior Summer: Goldman Sachs | Investment Banking
+								</ul>
+								<li> Matt Dezenzo
+								<ul>
+									<li> Junior Summer: Citi | Investment Banking
+								</ul>
+								<li> Vince Demarchi
+								<ul>
+									<li> Junior Summer: PNC | Capital Markets
+								</ul>
+								<li> Tony Zhang
+								<ul>
+									<li> Junior Summer: MUFG | Corporate &amp; Investment Banking
+								</ul>          
+							</ul>
+							<br />
+							<li> Class of 2017
+							<ul>
+								<li>Ada Situ </li>
+
+								<li>Ben Jang</li>
+
+								<li>Devin Keane</li>
+
+								<li>Eric Li</li>
+
+								<li>John Huo</li>
+
+								<li>Michael McCaffrey</li>
+
+								<li>Rohit Srungavarapu</li>
+
+								<li>Theo Peterson</li>
+
+								<li>Yvonne Yuan</li>
+							</ul>
+							<br />
+							<li> Class of 2018
+							<ul>
+								<li>Amy Fan</li>
+
+								<li>Ian Campbell</li>
+
+								<li>Maxim Sak</li>
+
+								<li>Philip Forte</li>
+
+								<li>Tabish Valliani</li>
+
+								<li>Tony Bello</li>
+							</ul> 
+						</ul>
+						
+						<h4 />
+						
+					</div>
+				</div>
+			</section><!-- end of service section -->
+	
+
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>

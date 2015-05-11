@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wall Street Club - Tepper School of Business</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script>
+		var WSC_Site= angular.module('WSC_Site',[]);
+
+		function main_controller ($scope, $http, $location){
+			$scope.page = "application";
+
+			$scope.setPage = function(page_name){
+				$scope.page = page_name;
+			};
+		};
+
+		WSC_Site.controller('main_controller',main_controller);
+	</script>
+</head>
+<body ng-app="WSC_Site" ng-controller="main_controller">
+	
+	<!-- ====================================================
+	header section -->
+	<div ng-include src="'menubar.html'"></div>	
+	<section>
+		<br />
+		<br />	
+		<br />
+		<br />	
+	</section>
+			<section class="team" id="application">
+				<div class="container">
+					<div class="row col-sm-10 col-sm-offset-1 ">
+							<h2 class="text-center">Application</h2>
+							<h4 style="line-height: 150%;">
+								<hr/> 
+								We hold an application process at the beginning of each semester. You can best prepare yourself for the
+								application by doing the following:
+								<br />
+								<br />
+								All applicants:
+								<br />
+								Investment banking applicants:
+								<br />
+								Sales &amp; trading applicants:
+							</h4>
+					</div>
+				</div>
+			</section><!-- end of team section -->
+
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>
