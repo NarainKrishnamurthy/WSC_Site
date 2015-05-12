@@ -19,19 +19,19 @@
 		WSC_Site.controller('main_controller',main_controller);
 	</script>
 </head>
-<body ng-app="WSC_Site" ng-controller="main_controller">
+<body ng-app="WSC_Site" ng-controller="main_controller" class="sa-body">
 	
 	<!-- ====================================================
 	header section -->
 	<div ng-include src="'menubar.html'"></div>	
-		<section>
-		<br />
-	</section>
-			<section class="service sa" id="sa">
+	<div class="about-header"></div>
+
+			<section class="about about-content" id="sa">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-							<h2 class="text-center">Seeking Alpha</h2>
-							<h4 style="line-height: 150%;">
+							<h3>Collaboration with Seeking Alpha</h3>
+							<hr />
+							<p style="line-height: 150%;">
 								<br/> 
 								Wall Street Club members regularly write opinion articles on the financial markets and individual 
 companies as part of our training program in preparation for the Wall Street interview process. We 
@@ -39,18 +39,13 @@ actively work with Seeking Alpha to publish member articles for public viewing a
 							<br />
 							<br />
 							You can view our publications <a href="http://seekingalpha.com/author/carnegie-mellon-wall-street-club">here</a>
-					<br />
-					<br />
-					<br />
-					<br />
-					
-
-							</h4>
+							</p>
 					</div>
 				</div>
-			</section>
 
 <div ng-include src="'footer.html'"></div>	
+			</section>
+
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>

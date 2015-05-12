@@ -23,23 +23,17 @@
 		WSC_Site.controller('main_controller',main_controller);
 	</script>
 </head>
-<body ng-app="WSC_Site" ng-controller="main_controller">
+<body ng-app="WSC_Site" ng-controller="main_controller" class="about-body">
 	
 	<div ng-include src="'menubar.html'"></div>	
-	<section>
-		<br />
-		<br />	
-		<br />
-		<br />	
-	</section>
 			<!-- about section -->
-			<section class="about" id="about">
+	<div class="about-header"></div>
+			<section class="about about-content" id="about">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-						<h2 class="text-center">about us</h2>
-						<h4 style="line-height: 150%;">
-<br/> 
-			
+						<h3>About Us</h3>
+						<hr />
+						<p style="line-height: 150%;">			
 The Carnegie Mellon Wall Street Club is an exclusive organization dedicated to providing CMU 
 students with the resources necessary to obtain internships and full-time positions on Wall Street. 
 Members go through a training program about careers on Wall Street with a focus on industry 
@@ -65,13 +59,11 @@ the Wall Street Club application process.
 Since the club’s founding in early 2014, we have placed 100% of our members into front-office 
 positions within major investment banks and boutiques on Wall Street. Firms represented by our 
 members include Goldman Sachs, Morgan Stanley, JP Morgan, Evercore, Citi, Bank of America Merrill 
-Lynch, Barclays, Deutsche Bank, Jefferies, and HSBC.</h4>
+Lynch, Barclays, Deutsche Bank, Jefferies, and HSBC.</p>
 			</div>
 			</div>
+			<div ng-include src="'footer.html'"></div>	
 			</section><!-- end of about section -->
-
-
-<div ng-include src="'footer.html'"></div>	
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>

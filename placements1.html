@@ -23,21 +23,19 @@
 		WSC_Site.controller('main_controller',main_controller);
 	</script>
 </head>
-<body ng-app="WSC_Site" ng-controller="main_controller">
+<body ng-app="WSC_Site" ng-controller="main_controller" class="placements-body">
 	
 	<div ng-include src="'menubar.html'"></div>		
-	<section>
-		<br />
-	</section>
 			<!-- service section starts here -->
 
-			<section class="service" id="placements1">
+			<div class="about-header"></div>
+			<section class="about about-content" id="placements1">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-						<h2 class="text-center">Current Members</h2>
-						<h4 style="line-height: 150%;">
-						<br/> 
-						<ul>
+						<h3>Current Members</h3>
+						<hr />
+						<p style="line-height: 150%;">
+						<ul style="padding: 0px;">
 							<li> Class of 2016
 							<ul> 
 								<li> Carleton Gibson - Club President
@@ -68,10 +66,6 @@
 								<ul>
 									<li> Junior Summer: JP Morgan | Investment Banking
 								</ul>    
-								<li> Dina Berdichevsky
-								<ul>
-									<li> Junior Summer: Jefferies | Investment Banking
-								</ul>
 								<li> Dina Berdichevsky
 								<ul>
 									<li> Junior Summer: Jefferies | Investment Banking
@@ -131,14 +125,15 @@
 							</ul> 
 						</ul>
 						
-						<h4 />
+						<p />
 						
 					</div>
 				</div>
-			</section><!-- end of service section -->
+
+	<div ng-include src="'footer.html'"></div>	
+	</section><!-- end of service section -->
 	
 
-<div ng-include src="'footer.html'"></div>	
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>

@@ -23,19 +23,16 @@
 		WSC_Site.controller('main_controller',main_controller);
 	</script>
 </head>
-<body ng-app="WSC_Site" ng-controller="main_controller">
+<body ng-app="WSC_Site" ng-controller="main_controller" class="placements-body">
 	<div ng-include src="'menubar.html'"></div>	
-	<section>
-		<br />
-	</section>
-			<section class="service" id="placements2">
+	<div class="about-header"></div>
+			<section class="about about-content" id="placements2">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-							<h2 class="text-center">Alumni</h2>
-							<h4 style="line-height: 150%;">
-							<br/> 
-	
-							<ul>
+							<h3>Alumni</h3>
+							<hr />
+							<p style="line-height: 150%;">
+							<ul style="padding: 0px;">
 								<li> Class of 2015 </li>
 								<ul>
 								<li> Dixon Liang</li>
@@ -96,12 +93,14 @@
 							<li> Junior Summer: RBC | Investment Banking</li>
 							</ul>
 						</ul>
+					</p>
 					</div>
 				</div>
+
+			<div ng-include src="'footer.html'"></div>	
 			</section><!-- end of service section -->
 	
 
-<div ng-include src="'footer.html'"></div>	
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>

@@ -23,23 +23,18 @@
 		WSC_Site.controller('main_controller',main_controller);
 	</script>
 </head>
-<body ng-app="WSC_Site" ng-controller="main_controller">
+<body ng-app="WSC_Site" ng-controller="main_controller" class="application-body">
 	
 	<!-- ====================================================
 	header section -->
 	<div ng-include src="'menubar.html'"></div>	
-	<section>
-		<br />
-		<br />	
-		<br />
-		<br />	
-	</section>
-			<section class="team" id="application">
+	<div class="about-header"></div>
+			<section class="about about-content" id="application">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-							<h2 class="text-center">Application</h2>
-							<h4 style="line-height: 150%;">
-								<br/> 
+							<h3>Application Process</h3>
+							<hr />
+							<p style="line-height: 150%;">
 								We hold an application process at the beginning of each semester. You can best prepare yourself for the
 								application by doing the following:
 								<br />
@@ -49,12 +44,12 @@
 								Investment banking applicants:
 								<br />
 								Sales &amp; trading applicants:
-							</h4>
+							</p>
 					</div>
 				</div>
+			<div ng-include src="'footer.html'"></div>	
 			</section><!-- end of team section -->
 
-<div ng-include src="'footer.html'"></div>	
 	<!-- script tags
 	============================================================= -->
 	<script src="js/jquery-2.1.1.js"></script>
