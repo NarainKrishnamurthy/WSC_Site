@@ -174,7 +174,7 @@ li a.active{
 
 /*About */
 .about-header{
-    height: 325px;
+    height: 100px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -185,7 +185,7 @@ li a.active{
 
 .about-body {
 	 background: url("../img/student_meeting_R.jpg") no-repeat fixed;
-	 background-position: center 103px;
+	 background-position: center 65px;
    background-size: contain;
    margin: 0;
    padding: 0;
