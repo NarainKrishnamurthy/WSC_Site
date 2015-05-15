@@ -173,6 +173,17 @@ li a.active{
 
 
 /*About */
+.general-header{
+    height: 350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
 .about-header{
     height: 100px;
     width: 100%;
@@ -185,7 +196,7 @@ li a.active{
 
 .about-body {
 	 background: url("../img/student_meeting_R.jpg") no-repeat fixed;
-	 background-position: center 65px;
+	 background-position: center 70px;
    background-size: contain;
    margin: 0;
    padding: 0;
@@ -263,7 +274,7 @@ li a.active{
 }
 
 .sa-body {
-	 background: url("../img/stock_exchange_R.jpg") no-repeat fixed;
+	 background: url("../img/sa_logo.jpg") no-repeat fixed;
 	 background-position: center 110px;
    background-size: contain;
    margin: 0;
