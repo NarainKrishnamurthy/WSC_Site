@@ -24,8 +24,13 @@
 			$scope.C14 = [
 				{name:"Jay Shi" , ft_firm: "Jefferies", ft_role: "Investment Banking", jun_firm: "Jefferies", jun_role: "Investment Banking"},
 				{name:"Ronny Ho" , ft_firm: "Citi", ft_role: "Capital Markets", jun_firm: "Citi", jun_role: "Capital Markets"},
-				{name:"Jisoo Park" , ft_firm: "JP Morgan", ft_role: "Investment Banking", jun_firm: "RBC", jun_role: "Investment Banking"}
+				{name:"Jisoo Park" , ft_firm: "JP Morgan", ft_role: "Investment Banking", jun_firm: "RBC", jun_role: "Investment Banking"},
+				{name:"Utkarsh Narayan" , ft_firm: "Citi", ft_role: "Sales & Trading", jun_firm: "Citi", jun_role: "Sales & Trading"}
 			];
+			$scope.C12 = [
+				{name:"Hayden Tang" , ft_firm: "JP Morgan", ft_role: "Investment Banking", jun_firm: "UBS", jun_role: "Investment Banking"}
+			];
+
 			$scope.setPage = function(page_name){
 				$scope.page = page_name;
 			};
@@ -58,6 +63,17 @@
 						<li> Class of 2014 </li>
 							<ul>	
 								<div ng-repeat="p in C14">
+									<li> {{p.name}} </li>
+									<ul>
+										<li> Full Time: <i>{{p.ft_firm}}</i> | <i>{{p.ft_role}}</i> </li>
+										<li> Junior Summer: <i>{{p.jun_firm}}</i> | <i>{{p.jun_role}}</i> </li>
+									</ul>
+								</div>  
+							</ul>
+						<br />
+						<li> Class of 2012 </li>
+							<ul>	
+								<div ng-repeat="p in C12">
 									<li> {{p.name}} </li>
 									<ul>
 										<li> Full Time: <i>{{p.ft_firm}}</i> | <i>{{p.ft_role}}</i> </li>
