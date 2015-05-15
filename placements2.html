@@ -14,7 +14,19 @@
 
 		function main_controller ($scope, $http, $location){
 			$scope.page = "placements2";
-
+			$scope.C15 = [
+				{name:"Dixon Liang" , ft_firm: "Citi", ft_role: "Sales & Trading", jun_firm: "Citi", jun_role: "Sales & Trading" },
+				{name:"Karthik Annaamalai" , ft_firm: "Evercore", ft_role: "Investment Banking", jun_firm: "Evercore", jun_role: "Investment Banking"},
+				{name:"John Cusick" , ft_firm: "Citi", ft_role: "Sales & Trading", jun_firm: "Citi", jun_role: "Sales & Trading" },
+				{name:"Laavy Kumar" , ft_firm: "Bank of America Merrill Lynch", ft_role: "Investment Banking", jun_firm: "Bank of America Merrill Lynch", jun_role: "Investment Banking"},
+				{name:"Anish Singh" , ft_firm: "JP Morgan", ft_role: "Investment Banking", jun_firm: "Jefferies", jun_role: "Investment Banking"},
+				{name:"Lawrence Hu" , ft_firm: "Deutsche Bank", ft_role: "Sales & Trading", jun_firm: "Deutsche Bank", jun_role: "Sales & Trading" }
+			];
+			$scope.C14 = [
+				{name:"Jay Shi" , ft_firm: "Jefferies", ft_role: "Investment Banking", jun_firm: "Jefferies", jun_role: "Investment Banking"},
+				{name:"Ronny Ho" , ft_firm: "Citi", ft_role: "Capital Markets", jun_firm: "Citi", jun_role: "Capital Markets"},
+				{name:"Jisoo Park" , ft_firm: "JP Morgan", ft_role: "Investment Banking", jun_firm: "RBC", jun_role: "Investment Banking"}
+			];
 			$scope.setPage = function(page_name){
 				$scope.page = page_name;
 			};
@@ -25,74 +37,37 @@
 </head>
 <body ng-app="WSC_Site" ng-controller="main_controller" class="placements-body">
 	<div ng-include src="'menubar.html'"></div>	
-	<div class="about-header"></div>
+	<div class="placements-header"></div>
 			<section class="about about-content" id="placements2">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
-							<h3>Alumni</h3>
-							<hr />
-							<p style="line-height: 150%;">
-							<ul style="padding: 0px;">
-								<li> Class of 2015 </li>
-								<ul>
-								<li> Dixon Liang</li>
-								<ul>
-								<li> Full Time: Citi | Sales &amp; Trading</li>
-								<li> Junior Summer: Citi | Sales &amp; Trading</li>
-								</ul>
-
-								<li> Karthik Annaamalai</li>
-								<ul>
-								<li> Full Time: Evercore | Investment Banking</li>
-								<li> Junior Summer: Evercore | Investment Banking</li>
-								</ul>
-
-								<li> John Cusick</li>
-								<ul>
-								<li> Full Time: Citi | Sales &amp; Trading</li>
-								<li> Junior Summer: Citi | Sales &amp;Trading</li>
-								</ul>
-
-								<li> Laavy Kumar</li>
-								<ul>
-								<li> Full Time: Bank of America Merrill Lynch | Investment Banking</li>
-								<li> Junior Summer: Bank of America Merrill Lynch | Investment Banking </li>
-								</ul>
-
-								<li> Anish Singh</li>
-								<ul>
-								<li> Full Time: JP Morgan | Investment Banking</li>
-								<li> Junior Summer: Jefferies | Investment Banking</li>
-								</ul>
-
-								<li> Lawrence Hu</li>
-								<ul>
-								<li> Full Time: Deutsche Bank | Sales &amp; Trading</li>
-								<li> Junior Summer: Deutsche Bank | Sales &amp; Trading</li>
-								</ul>
-
+					<h3>Alumni</h3>
+					<hr />
+					<p style="line-height: 150%;">
+					<ul style="padding: 0px;">
+						<li> <b>Class of 2015</b> </li>
+							<ul>	
+								<div ng-repeat="p in C15">
+									<li> {{p.name}} </li>
+									<ul>
+										<li> Full Time: <i>{{p.ft_firm}}</i> | <i>{{p.ft_role}}</i> </li>
+										<li> Junior Summer: <i>{{p.jun_firm}}</i> | <i>{{p.jun_role}}</i> </li>
+									</ul>
+								</div>  
 							</ul>
 						<br />
 						<li> Class of 2014 </li>
-						<ul>
-							<li> Jay Shi</li></li>
-							<ul>
-							<li> Full Time: Jefferies | Investment Banking</li>
-							<li> Junior Summer: Jefferies | Investment Banking</li>
+							<ul>	
+								<div ng-repeat="p in C14">
+									<li> {{p.name}} </li>
+									<ul>
+										<li> Full Time: <i>{{p.ft_firm}}</i> | <i>{{p.ft_role}}</i> </li>
+										<li> Junior Summer: <i>{{p.jun_firm}}</i> | <i>{{p.jun_role}}</i> </li>
+									</ul>
+								</div>  
 							</ul>
-
-							<li> Ronny Ho</li>
-							<ul>
-							<li> Full Time: Citi | Capital Markets</li>
-							<li> Junior Summer: Citi Capital Markets</li>
-							</ul>
-
-							<li> Jisoo Park</li>
-							<ul>
-							<li> Full Time: JP Morgan | Investment Banking</li>
-							<li> Junior Summer: RBC | Investment Banking</li>
-							</ul>
-						</ul>
+						
+					</ul>
 					</p>
 					</div>
 				</div>

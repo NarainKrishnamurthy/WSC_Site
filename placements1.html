@@ -14,6 +14,39 @@
 
 		function main_controller ($scope, $http, $location){
 			$scope.page = "placements1";
+			$scope.juniors = [
+				{name:"Carleton Gibson" , title: " – Club President", firm: "Bank of America Merrill Lynch", division: "Investment Banking"},
+				{name:"Ajit Bopalkar" , title: " – Club Head of IB", firm: "Citi", division: "Investment Banking"},
+				{name:"Vani Kumar" , title: " – Club Co-Head of S&T", firm: "Barclays ", division: "Sales & Trading"},
+				{name:"Jordan Friedlander" , title: " – Club Co-Head of S&T", firm: "Morgan Stanley", division: "Equity Research"},
+				{name:"Amanda McHenry" , title: "", firm: "HSBC", division: "Sales & Trading"},
+				{name:"Daniel Manners" , title: "", firm: "Citi", division: "Sales & Trading"},
+				{name:"Danning Wang" , title: "", firm: "JP Morgan", division: "Investment Banking"},
+				{name:"Dina Berdichevsky" , title: "", firm: "Jefferies", division: "Investment Banking"},
+				{name:"Greg Allen" , title: "", firm: "Goldman Sachs", division: "Investment Banking"},
+				{name:"Matt Dezenzo" , title: "", firm: "Citi", division: "Investment Banking"},
+				{name:"Vince Demarchi" , title: "", firm: "PNC", division: "Capital Markets"},
+				{name:"Tony Zhang" , title: "", firm: "MUFG", division: "Corporate & Investment Banking"},
+				];
+				$scope.sophomores = [
+								"Ada Situ ",
+								"Ben Jang",
+								"Devin Keane",
+								"Eric Li",
+								"John Huo",
+								"Michael McCaffrey",
+								"Rohit Srungavarapu",
+								"Theo Peterson",
+								"Yvonne Yuan"
+				];
+				$scope.freshmen = [
+								"Amy Fan",
+								"Ian Campbell",
+								"Maxim Sak",
+								"Philip Forte",
+								"Tabish Valliani",
+								"Tony Bello"
+				];
 
 			$scope.setPage = function(page_name){
 				$scope.page = page_name;
@@ -28,7 +61,7 @@
 	<div ng-include src="'menubar.html'"></div>		
 			<!-- service section starts here -->
 
-			<div class="about-header"></div>
+			<div class="placements-header"></div>
 			<section class="about about-content" id="placements1">
 				<div class="container">
 					<div class="row col-sm-10 col-sm-offset-1 ">
@@ -36,92 +69,28 @@
 						<hr />
 						<p style="line-height: 150%;">
 						<ul style="padding: 0px;">
-							<li> Class of 2016
+							<li><b> Class of 2016 </b>
 							<ul> 
-								<li> Carleton Gibson - Club President
-								<ul>
-									<li> Junior Summer: Bank of America Merrill Lynch | Investment Banking
-								</ul> 
-								<li> Ajit Bopalkar – Club Head of IB
-								<ul>
-									<li> Junior Summer: Citi | Investment Banking
-								</ul> 
-								<li> Vani Kumar – Club Co-Head of S&amp;T
-								<ul>
-									<li> Junior Summer: Barclays | Sales &amp; Trading
-								</ul> 
-								<li> Jordan Friedlander – Club Co-Head of S&amp;T 
-								<ul>
-									<li> Junior Summer: Morgan Stanley | Equity Research
-								</ul> 
-								<li> Amanda McHenry
-								<ul>
-									<li> Junior Summer: HSBC | Sales &amp; Trading
-								</ul>
-								<li> Daniel Manners
-								<ul>
-									<li> Junior Summer: Citi | Sales &amp; Trading
-								</ul>
-								<li> Danning Wang
-								<ul>
-									<li> Junior Summer: JP Morgan | Investment Banking
-								</ul>    
-								<li> Dina Berdichevsky
-								<ul>
-									<li> Junior Summer: Jefferies | Investment Banking
-								</ul>
-								<li> Greg Allen
-								<ul>
-									<li> Junior Summer: Goldman Sachs | Investment Banking
-								</ul>
-								<li> Matt Dezenzo
-								<ul>
-									<li> Junior Summer: Citi | Investment Banking
-								</ul>
-								<li> Vince Demarchi
-								<ul>
-									<li> Junior Summer: PNC | Capital Markets
-								</ul>
-								<li> Tony Zhang
-								<ul>
-									<li> Junior Summer: MUFG | Corporate &amp; Investment Banking
-								</ul>          
+								<div ng-repeat="p in juniors">
+									<li>{{p.name}} {{p.title}}</li>
+									<ul>
+										<li> Junior Summer: <i>{{p.firm}}</i> | <i>{{p.division}}</i>
+									</ul>
+								</div>   
 							</ul>
 							<br />
-							<li> Class of 2017
+							<li> <b>Class of 2017</b>
 							<ul>
-								<li>Ada Situ </li>
-
-								<li>Ben Jang</li>
-
-								<li>Devin Keane</li>
-
-								<li>Eric Li</li>
-
-								<li>John Huo</li>
-
-								<li>Michael McCaffrey</li>
-
-								<li>Rohit Srungavarapu</li>
-
-								<li>Theo Peterson</li>
-
-								<li>Yvonne Yuan</li>
+								<div ng-repeat="p in sophomores">
+									<li>{{p}}</li>
+								</div>
 							</ul>
 							<br />
-							<li> Class of 2018
+							<li> <b>Class of 2018</b>
 							<ul>
-								<li>Amy Fan</li>
-
-								<li>Ian Campbell</li>
-
-								<li>Maxim Sak</li>
-
-								<li>Philip Forte</li>
-
-								<li>Tabish Valliani</li>
-
-								<li>Tony Bello</li>
+								<div ng-repeat="p in freshmen">
+									<li>{{p}}</li>
+								</div>
 							</ul> 
 						</ul>
 						

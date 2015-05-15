@@ -171,9 +171,10 @@ li a.active{
   margin-top: 50px;
 }
 
+
 /*About */
 .about-header{
-    height: 350px;
+    height: 325px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -239,6 +240,16 @@ li a.active{
    padding: 0;
    height: 100%;
    width: 100%;
+}
+
+.placements-header{
+    height: 350px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
 }
 
 .application-body {
