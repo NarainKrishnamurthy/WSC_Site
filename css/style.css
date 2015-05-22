@@ -293,9 +293,6 @@ li a.active{
 }
 
 .contact-body {
-	 background: url("../img/CMU_R2.jpg") no-repeat fixed;
-	 background-position: center 90px;
-   background-size: contain;
    margin: 0;
    padding: 0;
    height: 100%;
