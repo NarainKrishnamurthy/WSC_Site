@@ -1,3 +1,3 @@
 # CMU Wall Street Club Website
 
-Under development. Will be published soon. 
+Under development. Current build visible at: https://powerful-sands-5800.herokuapp.com/
