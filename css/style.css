@@ -200,7 +200,7 @@ li a.active{
    background-size: contain;
    margin: 0;
    padding: 0;
-   height: 100%;
+   height: 95%;
    width: 100%;
 }
 
@@ -249,7 +249,7 @@ li a.active{
    background-size: 680px 250px;
    margin: 0;
    padding: 0;
-   height: 100%;
+   height: 95%;
    width: 100%;
 }
 
@@ -269,7 +269,7 @@ li a.active{
    background-size: contain;
    margin: 0;
    padding: 0;
-   height: 100%;
+   height: 95%;
    width: 100%;
 }
 
@@ -279,7 +279,7 @@ li a.active{
    background-size: auto 130px;
    margin: 0;
    padding: 0;
-   height: 100%;
+   height: 95%;
 }
 
 .sa-header{
@@ -295,7 +295,7 @@ li a.active{
 .contact-body {
    margin: 0;
    padding: 0;
-   height: 100%;
+   height: 95%;
    width: 100%;
 }
 
@@ -681,6 +681,9 @@ li a.active{
 }
 
 /*footer*/
+.footer{
+	height: 5%;
+}
 .footer-para{
 	margin: 0;
 	padding: 0;
